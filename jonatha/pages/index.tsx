@@ -26,7 +26,7 @@ export default function Home() {
         <main>
           
           <div id="first-card">
-            <p className='pb-4'> Hi, I'm Jonatha!</p>
+            <p className='pb-4'> Hi, I'm Jonatha.</p>
             <div className=' shadow-[11px_11px_0px_0px_rgba(0,0,0,1)]'>
               <div className='outline-4 outline-slate-950 outline p-3'>
                 <h1 className='font-bold '> A software engineer passionate about <br /> building Mobile and Web Apps</h1>
