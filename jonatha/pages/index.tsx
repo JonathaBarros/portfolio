@@ -25,7 +25,7 @@ export default function Home() {
       <div className='max-w-screen-xl flex flex-col items-center justify-between mx-auto p-4' >
         <main>
           
-          <div id="first-card">
+          <div id="first-main-card">
             <p className='pb-4'> Hi, I'm Jonatha.</p>
             <div className=' shadow-[11px_11px_0px_0px_rgba(0,0,0,1)]'>
               <div className='outline-4 outline-slate-950 outline p-3'>
@@ -34,7 +34,7 @@ export default function Home() {
             </div>
           </div >
 
-          <div id="second-card">
+          <div id="second-main-card">
 
           </div>
         </main>
