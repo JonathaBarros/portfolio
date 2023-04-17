@@ -6,22 +6,28 @@ export default function Home() {
   return (
 
     <div>
-      <nav className='flex flex-row justify-around mt-2'>
-        <Image
-          src={logo}
-          alt="Logo"
-          width={80}
-          height={80}
-        />
-        <div className='flex flex-row justify-center '>
-          <button className='m-1'>About me</button>
-          <button className='m-1'>My projects</button>
-          <button>Contact</button>
-        </div>
-      </nav>
+      <header className='max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4'>
+          <Image
+            src={logo}
+            alt="Logo"
+            width={80}
+            height={80}
+          />
 
-      <main>main</main>
-      <footer>oi</footer>
+        <nav className='flex flex-row justify-center'>
+          <a className='m-4 '>About me</a>
+          <a className='m-4'>My projects</a>
+          <a className='m-4'>Contact</a>
+        </nav>
+      </header>
+
+
+      <div  className='max-w-screen-xl flex flex-col items-center justify-between mx-auto p-4' >
+        <main>main</main>
+        <footer>oi</footer>
+      </div>
+
+
     </div>
   )
 }
