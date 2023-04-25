@@ -18,7 +18,7 @@ export default function Home() {
 
         <div id="hero-section" className='flex flex-col items-center'>
           <h1 className='font-bebas text-6xl mt-28'> A software engineer passionate about <br /> building Mobile and Web Applications.</h1>
-          <div className='flex flex-row items-center justify-center'>
+          <div className='flex flex-row items-center justify-center mr-24'>
             <Image className='pt-24 pr-6' src={arrow} alt={'arrow'} />
             <div className='-rotate-6 mt-6 w-40 h-14 bg-white font-bebas text-3xl flex items-center justify-center border-2 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>HIRE ME</div>
           </div>
