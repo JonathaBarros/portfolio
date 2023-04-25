@@ -3,6 +3,7 @@ import arrow from '../assets/arrow.svg'
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
 import ig from '../assets/ig.png'
+import me from '../assets/me.jpg'
 
 export default function Home() {
   return (
@@ -38,8 +39,26 @@ export default function Home() {
         </div>
 
         <div className=' bg-black font-bebas text-3xl text-white mt-10 h-12 min-w-full flex items-center justify-center mb-10'>WHO AM I?</div>
-       
-        <footer className='min-w-full h-48 bg-black flex flex-row justify-between pt-12 pr-28 pl-20' >
+    
+        <Image className='rounded-full border-solid border-4 border-black grayscale' src={me} height={128} width={128} alt={'Jonatha'}/>
+        <div className='text-black font-bebas text-3xl mt-2'>JONATHA ALVES</div>
+        <div className='min-w-full mt-10 mb-10 h-96 border-4 border-solid border-black rounded-md'>
+
+        </div>
+
+        <div className=' bg-black font-bebas text-3xl text-white  h-12 min-w-full flex items-center justify-center mb-10'>HIT ME UP!</div>
+        
+        <div className='flex justify-center flex-col items-center border-4 border-solid rounded border-black shadow-[14px_14px_0px_0px_rgba(0,0,0,1)] min-w-[calc(100%-14px)] mr-4 mt-10 mb-20 h-auto pb-10 space-y-8'>
+          <div className='text-black font-bebas text-3xl mt-2 flex justify-center pt-4'>LET'S WORK TOGETHER ;)</div>
+          <div className='text-black font-bebas text-3xl w-96 border-2 pl-4 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>NAME</div>
+          <div className='text-black font-bebas text-3xl w-96 border-2 pl-4 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>EMAIL</div>
+          <div className='text-black font-bebas text-3xl w-6/12 h-48  p-4 border-2 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>...I WANT TO HAVE YOU IN MY TEAM!!</div>
+          <div className='mt-6 w-52 h-10 bg-blue-600 font-bebas text-3xl flex items-center justify-center border-2 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>SEND MESSAGE</div>
+
+        </div>
+
+
+        <footer className='min-w-full h-48 bg-black flex flex-row justify-between pt-12 pr-28 pl-20 mt-10' >
           <div id="first-colum">
             <div className=' text-white font-bebas text-3xl'>COPYRIGHT 2023</div>
             <div className=' text-white font-bebas text-base'>ALL RIGHTS RESERVED</div>
