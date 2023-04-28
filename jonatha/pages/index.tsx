@@ -6,17 +6,21 @@ import ig from '../assets/ig.png'
 import me from '../assets/me.jpg'
 
 export default function Home() {
+
+  function scrollToView(id: string) {
+    document.getElementById(id)?.scrollIntoView(true);
+  }
   return (
 
     <>
       <header className='max-w-screen-lg flex flex-wrap items-center justify-between ml-auto mr-auto'>
         <a href=''>
-          <div className='w-60 bg-black h-20 text-white font-bebas text-3xl flex items-center justify-center pt-4'>JONATHA.DEV</div>
+          <div id="home" className='w-60 bg-black h-20 text-white font-bebas text-3xl flex items-center justify-center pt-4'>JONATHA.DEV</div>
         </a>
         <nav className='flex flex-row justify-center'>
-          <a href='#who-am-i' className='m-4 pt-4 font-bebas text-3xl hover:underline underline-offset-8'>WHO AM I?</a>
-          <a href='#projects' className='m-4 pt-4 font-bebas text-3xl hover:underline underline-offset-8'>PROJECTS</a>
-          <a href='#hit-me-up' className='m-4 pt-4 font-bebas text-3xl hover:underline underline-offset-8'>HIT ME UP</a>
+          <a onClick={() => scrollToView("who-am-i")} className='m-4 pt-4 font-bebas text-3xl hover:underline underline-offset-8 cursor-pointer'>WHO AM I?</a>
+          <a onClick={() => scrollToView("projects")} className='m-4 pt-4 font-bebas text-3xl hover:underline underline-offset-8 cursor-pointer'>PROJECTS</a>
+          <a onClick={() => scrollToView("hit-me-up")} className='m-4 pt-4 font-bebas text-3xl hover:underline underline-offset-8 cursor-pointer'>HIT ME UP</a>
         </nav>
       </header>
 
@@ -26,7 +30,7 @@ export default function Home() {
           <h1 className='font-bebas text-6xl mt-28'> A software engineer passionate about <br /> building Mobile and Web Applications.</h1>
           <div className='flex flex-row items-center justify-center mr-24'>
             <Image className='pt-24 pr-6' src={arrow} alt={'arrow'} />
-            <div className='-rotate-6 mt-6 w-40 h-14 bg-white font-bebas text-3xl flex items-center justify-center border-2 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>HIRE ME</div>
+            <div onClick={() => { scrollToView("hit-me-up") }} className='hover:scale-110 cursor-pointer -rotate-6 mt-6 w-40 h-14 bg-white font-bebas text-3xl flex items-center justify-center border-2 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>HIRE ME</div>
           </div>
         </div>
 
@@ -78,7 +82,7 @@ export default function Home() {
 
           </div>
 
-          <div className=' text-white font-bebas text-3xl'>JONATHA.DEV</div>
+          <div onClick={() => scrollToView("home")} className=' text-white font-bebas text-3xl cursor-pointer'>JONATHA.DEV</div>
         </footer>
       </main>
 
