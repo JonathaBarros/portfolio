@@ -1,8 +1,12 @@
 import Image from 'next/image'
 import arrow from '../assets/arrow.svg'
+import camera from '../assets/camera.svg'
 import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
 import ig from '../assets/ig.png'
+import flutter from '../assets/flutter.png'
+import firebase from '../assets/firebase.png'
+import getx from '../assets/getx.png'
 import me from '../assets/me.jpg'
 import { useEffect } from 'react'
 
@@ -45,12 +49,57 @@ export default function Home() {
 
         <div id="projects" className=' bg-black font-bebas text-3xl text-white mt-10 h-12 min-w-full flex items-center justify-center'>WHAT HAVE I BEEN UP TO LATELY?</div>
 
-        <div className='min-w-full mt-10 h-96 border-4 border-solid border-black rounded-md'>
+        <div className='min-w-full mt-10 h-auto border-4 border-solid border-black rounded-md relative'>
           <div className='bg-blue-600 border-b-4 border-black font-bebas text-3xl text-white pl-10 h-16 flex items-center'>AGENDA-SECOM</div>
+          <div className=' h-64 w-1 bg-black absolute left-1/2 top-1/3'></div>
+
+          <div className='flex flex-row justify-between'>
+            <div className='max-w-[50%] m-20'>
+              <div className='h-96 w-64 border-4 border-black border-solid relative'>
+                <Image className='w-10 h-10 absolute -top-10 left-64' src={camera} alt={'camera icon'} />
+              </div>
+            </div>
+
+
+            <div className=' text-black font-bebas text-3xl max-w-[50%] mt-10 p-8 flex flex-col items-center justify-center'>
+              <span>a task managment app available for both ios and android. the app makes it easy to coordinate assignments and keep team members informed of new and upcoming events.
+              </span>
+              <h1 className='mt-10'>TECH USED</h1>
+              <div className='flex flex-row items-center justify-center mt-10'>
+                <Image src={flutter} height={38} width={133} alt={"flutter logo"}></Image>
+                <Image src={firebase} width={138} height={61} alt={"firebase logo"}></Image>
+                <Image src={getx} width={114} height={45} alt={'getx logo'}></Image>
+              </div>
+
+            </div>
+
+          </div>
         </div>
 
-        <div className='min-w-full mt-10 h-96 border-4 border-solid border-black rounded-md'>
+        <div className='min-w-full mt-10 h-auto border-4 border-solid border-black rounded-md relative'>
           <div className='bg-green-500 border-b-4 border-black font-bebas text-3xl text-white pl-10 h-16 flex items-center'>CARTEIRINHA DO ESTUDANTE</div>
+          <div className=' h-64 w-1 bg-black absolute left-1/2 top-1/3'></div>
+
+          <div className='flex flex-row justify-between'>
+            <div className='max-w-[50%] m-20'>
+              <div className='h-96 w-64 border-4 border-black border-solid relative'>
+                <Image className='w-10 h-10 absolute -top-10 left-64' src={camera} alt={'camera icon'} />
+              </div>
+            </div>
+
+
+            <div className=' text-black font-bebas text-3xl max-w-[50%] mt-10 p-8 flex flex-col items-center justify-center'>
+              <span>a web app that is designed for municipal government staff. It simplifies the process of generating identification cards for students who use government buses to get to school</span>
+              <h1 className='mt-10'>TECH USED</h1>
+              <div className='flex flex-row items-center justify-center mt-10'>
+                <Image src={flutter} height={38} width={133} alt={"flutter logo"}></Image>
+                <Image src={firebase} width={138} height={61} alt={"firebase logo"}></Image>
+                <Image src={getx} width={114} height={45} alt={'getx logo'}></Image>
+              </div>
+
+            </div>
+
+          </div>
         </div>
 
         <div id="who-am-i" className=' bg-black font-bebas text-3xl text-white mt-10 h-12 min-w-full flex items-center justify-center mb-10'>WHO AM I?</div>
