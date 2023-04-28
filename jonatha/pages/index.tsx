@@ -8,14 +8,14 @@ import { useEffect } from 'react'
 
 
 export default function Home() {
-  
-useEffect(()=>{
-  document.getElementById("2")?.addEventListener("keypress",(e)=>{if(e.key ==="Enter") scrollToView("who-am-i")});
-  document.getElementById("3")?.addEventListener("keypress",(e)=>{if(e.key ==="Enter") scrollToView("projects")});
-  document.getElementById("4")?.addEventListener("keypress",(e)=>{if(e.key ==="Enter") scrollToView("hit-me-up")});
-  document.getElementById("5")?.addEventListener("keypress",(e)=>{if(e.key ==="Enter") scrollToView("home")});
-},[])
 
+  useEffect(() => {
+    document.getElementById("2")?.addEventListener("keypress", (e) => { if (e.key === "Enter") scrollToView("who-am-i") });
+    document.getElementById("3")?.addEventListener("keypress", (e) => { if (e.key === "Enter") scrollToView("projects") });
+    document.getElementById("4")?.addEventListener("keypress", (e) => { if (e.key === "Enter") scrollToView("hit-me-up") });
+    document.getElementById("5")?.addEventListener("keypress", (e) => { if (e.key === "Enter") scrollToView("hit-me-up") });
+    document.getElementById("6")?.addEventListener("keypress", (e) => { if (e.key === "Enter") scrollToView("home") });
+  }, [])
 
   function scrollToView(id: string) {
     let event = document.getElementById(id);
@@ -24,7 +24,6 @@ useEffect(()=>{
 
   return (
     <>
-   
       <header className='max-w-screen-lg flex flex-wrap items-center justify-between ml-auto mr-auto'>
         <div tabIndex={1} id="home" className='w-60 bg-black h-20 text-white font-bebas text-3xl flex items-center justify-center pt-4'>JONATHA.DEV</div>
         <nav className='flex flex-row justify-center'>
@@ -40,7 +39,7 @@ useEffect(()=>{
           <h1 className='font-bebas text-6xl mt-28'> A software engineer passionate about <br /> building Mobile and Web Applications.</h1>
           <div className='flex flex-row items-center justify-center mr-24'>
             <Image className='pt-24 pr-6' src={arrow} alt={'arrow'} />
-            <div onClick={() => { scrollToView("hit-me-up") }} className='transform duration-100 hover:scale-110  cursor-pointer -rotate-6 mt-6 w-40 h-14 bg-white font-bebas text-3xl flex items-center justify-center border-2 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>HIRE ME</div>
+            <div id="5" tabIndex={5} onClick={() => { scrollToView("hit-me-up") }} className='transform duration-100 hover:scale-110  cursor-pointer -rotate-6 mt-6 w-40 h-14 bg-white font-bebas text-3xl flex items-center justify-center border-2 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>HIRE ME</div>
           </div>
         </div>
 
@@ -55,11 +54,9 @@ useEffect(()=>{
         </div>
 
         <div id="who-am-i" className=' bg-black font-bebas text-3xl text-white mt-10 h-12 min-w-full flex items-center justify-center mb-10'>WHO AM I?</div>
-
         <Image className='rounded-full border-solid border-4 border-black grayscale' src={me} height={128} width={128} alt={'Jonatha'} />
         <div className='text-black font-bebas text-3xl mt-2'>JONATHA ALVES</div>
         <div className='min-w-full mt-10 mb-10 h-96 border-4 border-solid border-black rounded-md'>
-
         </div>
 
         <div id='hit-me-up' className=' bg-black font-bebas text-3xl text-white  h-12 min-w-full flex items-center justify-center mb-10'>HIT ME UP!</div>
@@ -68,11 +65,9 @@ useEffect(()=>{
           <div className='text-black font-bebas text-3xl mt-2 flex justify-center pt-4'>LET'S WORK TOGETHER ;)</div>
           <div className='text-black font-bebas text-3xl w-96 border-2 pl-4 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>NAME</div>
           <div className='text-black font-bebas text-3xl w-96 border-2 pl-4 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>EMAIL</div>
-          <div className='text-black font-bebas text-3xl w-6/12 h-48  p-4 border-2 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>...I WANT TO HAVE YOU IN MY TEAM!!</div>
+          <div className='text-black font-bebas text-3xl w-6/12 h-48 p-4 border-2 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>...I WANT TO HAVE YOU IN MY TEAM!!</div>
           <div className='mt-6 w-52 h-10 bg-blue-600 font-bebas text-3xl flex items-center justify-center border-2 border-solid rounded border-black shadow-[5px_5px_0px_0px_rgba(0,0,0,1)]'>SEND MESSAGE</div>
-
         </div>
-
 
         <footer className='min-w-full h-48 bg-black flex flex-row justify-between pt-12 pr-28 pl-20 mt-10' >
           <div id="first-colum">
@@ -89,15 +84,10 @@ useEffect(()=>{
                 <Image src={github} height={38} width={38} alt={'Github'} />
               </a>
             </div>
-
           </div>
-
-          <div id="5" tabIndex={5} onClick={() => scrollToView("home")} className=' text-white font-bebas text-3xl cursor-pointer h-9'>JONATHA.DEV</div>
+          <div id="6" tabIndex={6} onClick={() => scrollToView("home")} className=' text-white font-bebas text-3xl cursor-pointer h-9'>JONATHA.DEV</div>
         </footer>
       </main>
-
-
-
     </>
   )
 }
