@@ -4,22 +4,27 @@ import linkedin from '../assets/linkedin.png'
 import github from '../assets/github.png'
 import ig from '../assets/ig.png'
 import me from '../assets/me.jpg'
+import { useEffect } from 'react'
+
 
 export default function Home() {
-
+  
+useEffect(()=>{
   document.getElementById("2")?.addEventListener("keypress",(e)=>{if(e.key ==="Enter") scrollToView("who-am-i")});
   document.getElementById("3")?.addEventListener("keypress",(e)=>{if(e.key ==="Enter") scrollToView("projects")});
   document.getElementById("4")?.addEventListener("keypress",(e)=>{if(e.key ==="Enter") scrollToView("hit-me-up")});
   document.getElementById("5")?.addEventListener("keypress",(e)=>{if(e.key ==="Enter") scrollToView("home")});
-  
+},[])
+
+
   function scrollToView(id: string) {
     let event = document.getElementById(id);
     event?.scrollIntoView(true);
   }
 
   return (
-
     <>
+   
       <header className='max-w-screen-lg flex flex-wrap items-center justify-between ml-auto mr-auto'>
         <div tabIndex={1} id="home" className='w-60 bg-black h-20 text-white font-bebas text-3xl flex items-center justify-center pt-4'>JONATHA.DEV</div>
         <nav className='flex flex-row justify-center'>
