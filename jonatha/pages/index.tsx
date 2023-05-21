@@ -143,8 +143,6 @@ export default function Home() {
           <div id="6" tabIndex={6} onClick={() => scrollToView("home")} className=' text-white font-bebas text-3xl cursor-pointer h-9'>JONATHA.DEV</div>
         </footer>
       </main>
-
-
     </>
   )
 }
